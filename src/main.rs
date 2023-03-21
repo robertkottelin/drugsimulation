@@ -3,9 +3,9 @@ use std::sync::{Arc, Mutex};
 use rand::Rng;
 use rayon::prelude::*;
 
-const NUM_COINS: usize = 100;
-const NUM_EXPERIMENTS: usize = 1000;
-const NUM_THREADS: usize = 4;
+const NUM_COINS: usize = 10000;
+const NUM_EXPERIMENTS: usize = 100;
+const NUM_THREADS: usize = 100;
 
 fn main() {
     let counts = Arc::new(Mutex::new(HashMap::new()));
